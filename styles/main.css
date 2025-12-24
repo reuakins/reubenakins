@@ -35,7 +35,7 @@ body {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    padding: 10rem 2rem 2rem;
+    padding: 12rem 2rem 2rem;
     overflow-x: hidden;
 }
 
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 5rem;
+    padding-top: 6rem;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -127,26 +127,27 @@ body {
     border: none !important;
     text-decoration: none !important;
     font-size: 0 !important;
-    padding: 0.5rem 1rem !important;
+    padding: 1rem 1rem !important;
     margin: 0 !important;
     display: block !important;
     text-align: center !important;
     z-index: 9999 !important;
     position: relative !important;
     overflow: visible !important;
-    min-height: 70px !important;
+    min-height: 80px !important;
 
     &::before {
         content: "Reuben Akins" !important;
         color: var(--navbar-text) !important;
-        font-size: 3.2rem !important;
+        font-size: 3rem !important;
         font-weight: bold !important;
         font-family: "Berkshire Swash", cursive, Georgia, serif !important;
         display: block !important;
         position: relative !important;
         z-index: 10000 !important;
-        line-height: 1.4 !important;
+        line-height: 1.5 !important;
         text-align: center !important;
+        padding: 0.25rem 0 !important;
     }
 
     &:hover::before {
@@ -307,12 +308,12 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
     body {
-        padding: 8rem 0.5rem 1rem;
+        padding: 10rem 0.5rem 1rem;
     }
 
     .content-panel {
         min-height: calc(100vh - 2rem);
-        padding-top: 6rem;
+        padding-top: 7rem;
     }
 
     .navbar-container {
