@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilex:wght@400;700&display=swap');
+
 :root {
     --navbar-bg: #74211c;
     --navbar-text: #ff751f;
@@ -166,6 +168,11 @@ body {
     & p {
         text-align: center;
         max-width: 600px;
+        font-family: 'Lilex', monospace;
+    }
+
+    & a {
+        font-family: 'Lilex', monospace;
     }
 }
 
