@@ -178,10 +178,10 @@ body {
 
 .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin-top: 2rem;
 }
 
@@ -190,6 +190,7 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    height: 180px;
 
     &:hover {
         transform: scale(1.05);
@@ -323,9 +324,13 @@ body {
     }
 
     .photo-gallery {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
         margin-top: 1rem;
+    }
+
+    .photo-item {
+        height: 140px;
     }
 
     .graphics-showcase {
