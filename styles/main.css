@@ -290,14 +290,14 @@ body {
         z-index: 1;
     }
 
-    /* Top left image (edd.gif) - larger, overlapping on top, above navbar */
+    /* Top left image (edd.gif) - larger, overlapping on top, moved down and left */
     &:nth-child(1) {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 120px;
+        left: -50px;
         width: 45%;
         max-width: 300px;
-        z-index: 25;
+        z-index: 3;
     }
 
     /* Bottom right image (cat.png) - smaller, overlapping on top */
