@@ -67,16 +67,15 @@ body {
 
 .navbar {
     background-color: var(--navbar-bg);
-    padding: 2rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.3rem;
     position: relative;
     width: 100%;
     overflow: visible !important;
-    min-height: 120px;
 }
 
 .fireball {
@@ -123,42 +122,35 @@ body {
 }
 
 .nav-title {
-    color: #ff0000 !important;
-    background-color: #00ff00 !important;
-    border: 5px solid #0000ff !important;
+    color: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
     text-decoration: none !important;
-    font-size: 3.5rem !important;
-    font-weight: bold !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    line-height: 1.5 !important;
-    padding: 1rem !important;
-    margin: 1rem !important;
+    font-size: 0 !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
     display: block !important;
     text-align: center !important;
     z-index: 9999 !important;
     position: relative !important;
-    opacity: 1 !important;
-    visibility: visible !important;
     overflow: visible !important;
-    min-width: 300px !important;
-    min-height: 80px !important;
-    text-shadow: none !important;
-    text-transform: none !important;
-    text-indent: 0 !important;
-    letter-spacing: 2px !important;
-    word-spacing: normal !important;
+    min-height: 70px !important;
 
     &::before {
-        content: "REUBEN AKINS" !important;
-        color: #ff0000 !important;
-        font-size: 3rem !important;
+        content: "Reuben Akins" !important;
+        color: var(--navbar-text) !important;
+        font-size: 3.2rem !important;
+        font-weight: bold !important;
+        font-family: "Berkshire Swash", cursive, Georgia, serif !important;
         display: block !important;
         position: relative !important;
         z-index: 10000 !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
     }
 
-    &:hover {
-        color: #ffff00 !important;
+    &:hover::before {
+        text-decoration: underline !important;
     }
 }
 
@@ -330,23 +322,21 @@ body {
 
     .navbar {
         flex-direction: column;
-        padding: 2rem 1rem;
-        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        gap: 0.3rem;
         overflow: visible !important;
-        min-height: 100px;
     }
 
     .nav-title {
-        font-size: 2.5rem !important;
-        line-height: 1.5 !important;
-        padding: 1rem !important;
-        margin: 1rem !important;
-        color: #ff0000 !important;
-        background-color: #00ff00 !important;
-        border: 5px solid #0000ff !important;
-        min-width: 200px !important;
-        min-height: 50px !important;
-        text-shadow: 2px 2px 4px #000000 !important;
+        font-size: 0 !important;
+        padding: 0.5rem !important;
+        margin: 0 !important;
+        min-height: 60px !important;
+
+        &::before {
+            font-size: 2.2rem !important;
+            line-height: 1.4 !important;
+        }
     }
 
     .nav-links {
