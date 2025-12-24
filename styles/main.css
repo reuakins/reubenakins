@@ -35,7 +35,7 @@ body {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    padding: 12rem 2rem 2rem;
+    padding: 8rem 2rem 2rem;
     overflow-x: hidden;
 }
 
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 6rem;
+    padding-top: 8rem;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -60,8 +60,8 @@ body {
     width: 90%;
     max-width: 800px;
     left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
+    top: 40px;
+    transform: translate(-50%, 0);
     z-index: 10;
 }
 
@@ -308,17 +308,18 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
     body {
-        padding: 10rem 0.5rem 1rem;
+        padding: 8rem 0.5rem 1rem;
     }
 
     .content-panel {
         min-height: calc(100vh - 2rem);
-        padding-top: 7rem;
+        padding-top: 8rem;
     }
 
     .navbar-container {
         width: 96%;
         max-width: none;
+        top: 30px;
     }
 
     .navbar {
