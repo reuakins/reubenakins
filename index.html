@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuben Akins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="content-panel">
+        <div class="navbar-container">
+            <img src="assets/fireball_s.png" class="fireball fireball-top-left" alt="">
+            <img src="assets/fireball_s.png" class="fireball fireball-top-right" alt="">
+            <img src="assets/fireball_s.png" class="fireball fireball-middle-left" alt="">
+            <img src="assets/fireball_s.png" class="fireball fireball-middle-right" alt="">
+            <img src="assets/fireball_s.png" class="fireball fireball-bottom-left" alt="">
+            <img src="assets/fireball_s.png" class="fireball fireball-bottom-right" alt="">
+
+            <nav class="navbar">
+                <a href="index.html" class="nav-title">Reuben Akins</a>
+                <div class="nav-links">
+                    <a href="pages/about.html">about me</a>
+                    <a href="pages/updates.html">updates</a>
+                    <a href="pages/links.html">links</a>
+                    <a href="pages/photos.html">photos</a>
+                </div>
+            </nav>
+        </div>
+
+        <main class="main-content">
+            <div class="graphics-showcase">
+                <div class="graphic-item">
+                    <img src="assets/edd.gif" alt="Edd playing keyboard">
+                </div>
+                <div class="graphic-item" data-credit="photo by Jakob Simpson @virtualstillness">
+                    <img src="assets/steel.jpg" alt="Steel">
+                </div>
+                <div class="graphic-item">
+                    <img src="assets/cat.png" alt="Cat">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        // Add sound effect to edd.gif
+        const eddGif = document.querySelector('.graphic-item:first-child img');
+        const eddAudio = new Audio('audio/ripplingwaters.mov');
+
+        eddGif.addEventListener('click', () => {
+            eddAudio.currentTime = 0; // Reset to start
+            eddAudio.play();
+        });
+
+        // Add sound effect to cat.png
+        const catImg = document.querySelector('.graphic-item:last-child img');
+        const catAudio = new Audio('audio/cat.mov');
+
+        catImg.addEventListener('click', () => {
+            catAudio.currentTime = 0; // Reset to start
+            catAudio.play();
+        });
+    </script>
+</body>
+</html>
