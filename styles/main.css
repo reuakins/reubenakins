@@ -140,10 +140,22 @@ body {
     opacity: 1 !important;
     visibility: visible !important;
     overflow: visible !important;
-    min-width: 200px !important;
-    min-height: 50px !important;
-    text-shadow: 2px 2px 4px #000000 !important;
-    text-transform: uppercase !important;
+    min-width: 300px !important;
+    min-height: 80px !important;
+    text-shadow: none !important;
+    text-transform: none !important;
+    text-indent: 0 !important;
+    letter-spacing: 2px !important;
+    word-spacing: normal !important;
+
+    &::before {
+        content: "REUBEN AKINS" !important;
+        color: #ff0000 !important;
+        font-size: 3rem !important;
+        display: block !important;
+        position: relative !important;
+        z-index: 10000 !important;
+    }
 
     &:hover {
         color: #ffff00 !important;
