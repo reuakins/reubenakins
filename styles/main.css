@@ -35,7 +35,7 @@ body {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    padding: 8rem 2rem 2rem;
+    padding: 10rem 2rem 2rem;
     overflow-x: hidden;
 }
 
@@ -50,8 +50,9 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 3rem;
+    padding-top: 5rem;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .navbar-container {
@@ -284,12 +285,12 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
     body {
-        padding: 6rem 0.5rem 1rem;
+        padding: 8rem 0.5rem 1rem;
     }
 
     .content-panel {
         min-height: calc(100vh - 2rem);
-        padding-top: 4rem;
+        padding-top: 6rem;
     }
 
     .navbar-container {
