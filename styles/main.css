@@ -430,3 +430,62 @@ body {
         right: -30px;
     }
 }
+  /* Updates page styles */
+  .update-item {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+      width: 100%;
+      max-width: 700px;
+  }
+
+  .update-item .update-text {
+      flex: 1;
+  }
+
+  .update-item .update-text h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--navbar-text);
+  }
+
+  .update-item .update-text p {
+      text-align: left;
+      font-family: 'Lilex', monospace;
+  }
+
+  .update-item .update-image {
+      flex: 1;
+      max-width: 300px;
+  }
+
+  .update-item .update-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .update-item .update-image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Reverse layout - image on LEFT, text on RIGHT */
+  .update-item.reverse {
+      flex-direction: row-reverse;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+      .update-item {
+          flex-direction: column !important;
+          gap: 1rem;
+      }
+
+      .update-item .update-image {
+          max-width: 100%;
+      }
+  }
