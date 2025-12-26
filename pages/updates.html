@@ -55,6 +55,43 @@
                   </div>
               </div>
         </main>
-    </div>
-</body>
-</html>
+      </div>
+
+      <!-- Image enlargement modal -->
+      <div id="imageModal" class="modal">
+          <span class="modal-close">&times;</span>
+          <img class="modal-content" id="modalImage" alt="">
+      </div>
+
+      <script>
+          // Get modal elements
+          const modal = document.getElementById('imageModal');
+          const modalImg = document.getElementById('modalImage');
+          const closeBtn = document.querySelector('.modal-close');
+
+          // Get all update images
+          const updateImages = document.querySelectorAll('.update-image img');
+
+           // Add click event to each image to open modal
+  updateImages.forEach((image) => {
+      image.addEventListener('click', () => {
+          modal.classList.add('show');
+          modalImg.src = image.src;
+          modalImg.alt = image.alt;
+      });
+  });
+
+
+          // Close modal when clicking the X button
+          closeBtn.addEventListener('click', () => {
+              modal.classList.remove('show');
+          });
+
+          // Close modal when clicking outside the image
+          modal.addEventListener('click', (e) => {
+              if (e.target === modal) {
+                  modal.classList.remove('show');
+              }
+          });
+      </script>
+  </body>

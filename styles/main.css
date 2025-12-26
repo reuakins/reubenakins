@@ -488,4 +488,44 @@ body {
       .update-item .update-image {
           max-width: 100%;
       }
+  }  /* Image modal styles */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1001;
+  }
+
+  .modal-close:hover {
+      color: #ff751f;
+  }
+
+  .modal.show {
+      display: block;
   }
